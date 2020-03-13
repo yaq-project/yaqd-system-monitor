@@ -48,7 +48,7 @@ setup(
     include_package_data=True,
     package_data=extra_files,
     keywords="system-monitor",
-    name="system-monitor",
+    name="yaqd-system-monitor",
     packages=find_packages(include=["yaqd-system-monitor", "yaqd-system-monitor.*"]),
     url="https://gitlab.com/yaq/system-monitor",
     version=version,
