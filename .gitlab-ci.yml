@@ -33,6 +33,7 @@ before_script:
   - pip install -U yaqd_core
   - pip install -U yaqc
   - pip install -U pytest
+  - pip list
 
 mypy:
   stage: test
