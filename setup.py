@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 here = pathlib.Path(__file__).parent
 
-with open(here / "system_monitor" / "VERSION") as version_file:
+with open(here / "yaqd_system_monitor" / "VERSION") as version_file:
     version = version_file.read().strip()
 
 
@@ -15,7 +15,7 @@ with open("README.md") as readme_file:
     readme = readme_file.read()
 
 
-requirements = ["yaqd-core"]
+requirements = ["yaqd-core", "psutil", "uptime"]
 
 extra_requirements = {"dev": ["black", "pre-commit"]}
 extra_files = {"system_monitor": ["VERSION"]}
@@ -37,7 +37,7 @@ setup(
     description="Yaq daemon for monitoring system usage.",
     entry_points={
         "console_scripts": [
-            "yaqd-system-monitor=system_monitor._system_monitor:SystemMonitor.main",
+            "yaqd-system-monitor=yaqd_system_monitor._system_monitor:SystemMonitor.main",
         ],
     },
     install_requires=requirements,
@@ -49,7 +49,7 @@ setup(
     package_data=extra_files,
     keywords="system-monitor",
     name="system-monitor",
-    packages=find_packages(include=["system-monitor", "system-monitor.*"]),
+    packages=find_packages(include=["yaqd-system-monitor", "yaqd-system-monitor.*"]),
     url="https://gitlab.com/yaq/system-monitor",
     version=version,
     zip_safe=False,
