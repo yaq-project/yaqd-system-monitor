@@ -2,8 +2,9 @@ __all__ = ["SystemMonitor"]
 
 import asyncio
 from typing import Dict, Any
-import psutil
-from uptime import uptime
+
+import psutil  #  type: ignore
+from uptime import uptime  # type: ignore
 
 from yaqd_core import Sensor, logging
 
