@@ -17,7 +17,7 @@ with open("README.md") as readme_file:
 
 requirements = ["yaqd-core", "psutil", "uptime"]
 
-extra_requirements = {"dev": ["black", "pre-commit"]}
+extra_requirements = {"dev": ["black", "pre-commit"], "tests": ["yaqc"]}
 extra_files = {"system_monitor": ["VERSION"]}
 
 setup(
