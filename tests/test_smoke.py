@@ -9,7 +9,7 @@ import yaqc
 @pytest.fixture(scope="module")
 def run_daemon():
     config = pathlib.Path(__file__).parent / "config.toml"
-    with subprocess.Popen(["/home/kyle/venvs/pyenv/shims/yaqd-system-monitor", "--config", config]) as proc:
+    with subprocess.Popen(["yaqd-system-monitor", "--config", config]) as proc:
         time.sleep(0.2)
         c = yaqc.Client(38070)
         yield c
