@@ -44,7 +44,6 @@ mypy:
 pytest:
   stage: test
   script:
-    - yaqd-system-monitor --config ./tests/config.toml &
     - pytest
 
 

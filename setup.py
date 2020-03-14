@@ -18,7 +18,7 @@ with open("README.md") as readme_file:
 requirements = ["yaqd-core", "psutil", "uptime"]
 
 extra_requirements = {"dev": ["black", "pre-commit"], "tests": ["yaqc"]}
-extra_files = {"system_monitor": ["VERSION"]}
+extra_files = {"yaqd_system_monitor": ["VERSION"]}
 
 setup(
     author="yaq developers",
@@ -49,7 +49,7 @@ setup(
     package_data=extra_files,
     keywords="system-monitor",
     name="yaqd-system-monitor",
-    packages=find_packages(include=["yaqd-system-monitor", "yaqd-system-monitor.*"]),
+    packages=find_packages(include=["yaqd_system_monitor", "yaqd_system_monitor.*"]),
     url="https://gitlab.com/yaq/system-monitor",
     version=version,
     zip_safe=False,
