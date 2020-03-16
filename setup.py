@@ -50,7 +50,12 @@ setup(
     keywords="system-monitor",
     name="yaqd-system-monitor",
     packages=find_packages(include=["yaqd_system_monitor", "yaqd_system_monitor.*"]),
-    url="https://gitlab.com/yaq/system-monitor",
+    url="https://yaq.fyi",
+    project_urls={
+        "Source": "https://gitlab.com/yaq/yaqd-system-monitor",
+        "Documentation": "https://yaq.fyi/daemons/system-monitor/",
+        "Issue Tracker": "https://gitlab.com/yaq/yaqd-system-monitor/-/issues",
+    },
     version=version,
     zip_safe=False,
 )
