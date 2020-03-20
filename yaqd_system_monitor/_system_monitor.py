@@ -26,6 +26,7 @@ def diskio():
 
 class SystemMonitor(Sensor):
     _kind = "system-monitor"
+    traits = []
     defaults: Dict[str, Any] = {}
 
     def __init__(self, name, config, config_filepath):
