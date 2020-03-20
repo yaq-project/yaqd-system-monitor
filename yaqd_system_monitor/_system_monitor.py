@@ -1,7 +1,7 @@
 __all__ = ["SystemMonitor"]
 
 import asyncio
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 import psutil  #  type: ignore
 from uptime import uptime  # type: ignore
@@ -26,7 +26,7 @@ def diskio():
 
 class SystemMonitor(Sensor):
     _kind = "system-monitor"
-    traits = []
+    traits: List[str] = []
     defaults: Dict[str, Any] = {}
 
     def __init__(self, name, config, config_filepath):
