@@ -8,6 +8,8 @@ from uptime import uptime  # type: ignore
 
 from yaqd_core import Sensor, logging
 
+from .__version__ import __branch__
+
 
 def diskio():
     """
@@ -23,6 +25,7 @@ def diskio():
 
 class SystemMonitor(Sensor):
     _kind = "system-monitor"
+    _version = "1.0.0" + f"+{__branch__}" if __branch__ else ""
     traits: List[str] = []
     defaults: Dict[str, Any] = {}
 
