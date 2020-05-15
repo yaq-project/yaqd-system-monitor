@@ -8,9 +8,6 @@ from uptime import uptime  # type: ignore
 
 from yaqd_core import Sensor, logging
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
 
 def diskio():
     """
