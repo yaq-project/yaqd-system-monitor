@@ -10,9 +10,6 @@ from yaqd_core import Sensor, logging
 
 from .__version__ import __branch__
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
 
 def diskio():
     """
