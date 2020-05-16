@@ -15,7 +15,7 @@ with open("README.md") as readme_file:
     readme = readme_file.read()
 
 
-requirements = ["yaqd-core", "psutil", "uptime"]
+requirements = ["yaqd-core>=2020.05.1", "psutil", "uptime"]
 
 extra_requirements = {"dev": ["black", "pre-commit"], "tests": ["yaqc"]}
 extra_files = {"yaqd_system_monitor": ["VERSION"]}
