@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - from now on, yaqd-system-monitor will use date based versioning
 - Use daemon level logging, see [YEP-106](https://yeps.yaq.fyi/106)
 - refactored gitlab-ci
+- updated readme
 
 ## [0.1.1]
 
