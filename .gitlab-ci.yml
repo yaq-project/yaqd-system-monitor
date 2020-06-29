@@ -13,32 +13,33 @@ before_script:
   - pip install -U virtualenv
   - virtualenv venv
   - source venv/bin/activate
-  - pip install -U twine
-  - pip install -U pytest
+  - pip install -U flit
   - pip install -U mypy
   - pip install -U yaqc
-  - pip install -U yaqd-core
-  - pip install -U psutil
-  - pip install -U uptime
-  - pip install -e .
+  - pip install -U pytest
+  - pip install -U yaq-traits
+  - FLIT_ROOT_INSTALL=1 flit install
 
 # test stage
 mypy:
   stage: test
   script:
     - mypy yaqd_system_monitor
-entry:
+pytest:
   stage: test
   script:
-    - yaqd-system-monitor --version
-    - yaqd-system-monitor -h
+    - yaqd-system-monitor --config ./tests/config.toml &
+    - pytest
+traits:
+  stage: test
+  script:
+    - yaq-traits check yaqd_system_monitor/system-monitor.avpr
 
 # deploy stage
-twine:
+flit:
   stage: deploy
   script:
-    - python setup.py sdist bdist_wheel
-    - twine upload dist/*
+    - flit publish
   artifacts:
     paths:
       - dist/*
