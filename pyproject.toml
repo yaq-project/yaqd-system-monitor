@@ -7,7 +7,7 @@ module = "yaqd_system_monitor"
 author = "yaq developers"
 author-email = "blaise@untzag.com"
 home-page = "https://yaq.fyi"
-requires-python = ">3.7"
+requires-python = ">=3.7"
 requires = ["yaqd-core", "psutil", "uptime"]
 description-file="README.md"
 classifiers=[
