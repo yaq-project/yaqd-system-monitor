@@ -1,6 +1,6 @@
 # yaqd-system-monitor
 
-[![PyPI version](https://badge.fury.io/py/yaqd-system-monitor.svg)](https://badge.fury.io/py/yaqd-system-monitor)
+[![PyPI](https://img.shields.io/pypi/v/yaqd-system-monitor)](https://pypi.org/project/yaqd-system-monitor)
 [![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-system-monitor)](https://anaconda.org/conda-forge/yaqd-system-monitor)
 [![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
 [![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
