@@ -4,6 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
 module = "yaqd_system_monitor"
+dist-name = "yaqd-system-monitor"
 author = "yaq developers"
 author-email = "blaise@untzag.com"
 home-page = "https://yaq.fyi"
