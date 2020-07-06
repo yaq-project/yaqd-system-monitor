@@ -5,8 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+## [2020.07.1]
+
 ### Fixed
 - Correct version of python supported (>=3.7)
+- distribute with `-` instead of `_`
 
 ## [2020.07.0]
 
@@ -38,7 +41,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### Added
 - initial release
 
-[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.0...master
+[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.1...master
+[2020.07.1]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.0...v2020.07.1
 [2020.07.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v0.1.1...v2020.07.0
 [2020.05.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v0.1.1...v2020.05.0
 [0.1.1]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v0.1.0...v0.1.1
