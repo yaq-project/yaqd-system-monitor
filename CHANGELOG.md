@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Added
+- additional trait `pre-measure-trigger`, see [YEP-310](https://yeps.yaq.fyi/310/)
+
 ## [2020.07.1]
 
 ### Fixed
