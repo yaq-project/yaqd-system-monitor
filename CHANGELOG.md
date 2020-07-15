@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+## [2020.07.2]
+
 ### Added
 - additional trait `pre-measure-trigger`, see [YEP-310](https://yeps.yaq.fyi/310/)
 
@@ -44,7 +46,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### Added
 - initial release
 
-[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.1...master
+[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.2...master
+[2020.07.2]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.1...v2020.07.2
 [2020.07.1]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.0...v2020.07.1
 [2020.07.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v0.1.1...v2020.07.0
 [2020.05.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v0.1.1...v2020.05.0
