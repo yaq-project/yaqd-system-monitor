@@ -8,3 +8,5 @@ bugtracker = "https://gitlab.com/yaq/yaqd-system-monitor/-/issues"
 
 [installation]
 PyPI = "https://pypi.org/project/yaqd-system-monitor/"
+conda-forge = "https://anaconda.org/conda-forge/yaqd-system-monitor/"
+

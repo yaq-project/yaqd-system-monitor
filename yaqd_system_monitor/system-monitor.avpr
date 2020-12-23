@@ -39,7 +39,8 @@
     },
     "doc": "Sensor daemon to monitor local system performance (CPU, memory, uptime, and disk).",
     "installation": {
-        "PyPI": "https://pypi.org/project/yaqd-system-monitor/"
+        "PyPI": "https://pypi.org/project/yaqd-system-monitor/",
+        "conda-forge": "https://anaconda.org/conda-forge/yaqd-system-monitor/"
     },
     "links": {
         "bugtracker": "https://gitlab.com/yaq/yaqd-system-monitor/-/issues",
@@ -161,9 +162,9 @@
     "protocol": "system-monitor",
     "requires": [],
     "traits": [
-        "has-measure-trigger",
+        "is-sensor",
         "is-daemon",
-        "is-sensor"
+        "has-measure-trigger"
     ],
     "types": [
         {
