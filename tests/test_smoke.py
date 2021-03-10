@@ -6,6 +6,7 @@ import pytest
 
 import yaqc
 
+
 @pytest.fixture(scope="module")
 def run_daemon():
     config = pathlib.Path(__file__).parent / "config.toml"
@@ -14,6 +15,7 @@ def run_daemon():
         c = yaqc.Client(38070)
         yield c
         proc.terminate()
+
 
 def test_nothing(run_daemon):
     c = run_daemon
