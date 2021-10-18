@@ -57,7 +57,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### Added
 - initial release
 
-[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2021.3.0...master
+[Unreleased]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2021.3.0...main
 [2021.3.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.12.0...v2021.3.0
 [2020.12.0]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.2...v2020.12.0
 [2020.07.2]: https://gitlab.com/yaq/yaqd-system-monitor/-/compare/v2020.07.1...v2020.07.2
